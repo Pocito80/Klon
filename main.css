@@ -119,10 +119,10 @@ a {
 .frame13 {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   gap: 35px;
-  width: 50%;
 }
 .button-book {
   display: flex;
@@ -153,7 +153,23 @@ a {
   flex-shrink: 0;
 }
 .ilustration {
-  width: 50%;
   display: flex;
   justify-content: right;
+}
+.block_2 {
+}
+.subheading {
+  display: inline-flex;
+  padding: 0px 100px;
+  align-items: flex-start;
+  gap: 40px;
+}
+.services {
+  border-radius: 7px;
+  background: var(--Green, #b9ff66);
+  display: flex;
+  padding: 0px 7px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
