@@ -278,7 +278,7 @@ a {
   align-items: center;
   gap: 15px;
   padding-top: 90px;
-  color: var(--Black, #000);
+  color: #000;
   font-family: "Space Grotesk";
   font-size: 20px;
   font-style: normal;
@@ -428,7 +428,8 @@ textarea {
 }
 .ilustration3 {
   display: flex;
-  /* max-width: 100%; */
+  max-width: 100%;
+
   justify-content: flex-end;
 }
 .big_img {
@@ -688,6 +689,6 @@ textarea {
 .ilustration3_box {
   display: flex;
   flex: 1;
-
+  min-width: 45vw;
   justify-content: flex-end;
 }
