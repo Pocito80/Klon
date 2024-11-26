@@ -10,11 +10,26 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
     </style>
-  </head>
+    <script>
+      function toggleMenu() {
+        var mobileNav = document.getElementById("mobileNav");
+        if (mobileNav.style.display === "flex") {
+          mobileNav.style.display = "none";
+        } else {
+          mobileNav.style.display = "flex";
+        }
+      }
 
+      document.addEventListener("DOMContentLoaded", function () {
+        var mobileNav = document.getElementById("mobileNav");
+        mobileNav.style.display = "none";
+      });
+    </script>
+  </head>
   <body>
     <div class="content">
       <div class="landing-page">
+        <!-- Nav Bar -->
         <!-- Nav Bar -->
         <div class="navigation-bar">
           <div class="logo_block">
@@ -31,6 +46,15 @@
             <a>Blog</a>
             <input type="button" value="Request a quote" class="button-nav" />
           </div>
+          <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+          <a>About us</a>
+          <a>Services</a>
+          <a>Use Cases</a>
+          <a>Pricing</a>
+          <a>Blog</a>
+          <input type="button" value="Request a quote" class="button-nav" />
         </div>
 
         <!-- Header -->
