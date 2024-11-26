@@ -358,6 +358,7 @@ a {
   border-radius: 45px;
   background: #f3f3f3;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .form {
   display: flex;
@@ -427,7 +428,7 @@ textarea {
 }
 .ilustration3 {
   display: flex;
-  flex: 1;
+  /* max-width: 100%; */
   justify-content: flex-end;
 }
 .big_img {
@@ -679,9 +680,14 @@ textarea {
 .subscribe_email::placeholder {
   color: #fff;
 }
-.ilustration2,
-.ilustration3 {
+.ilustration2 {
   max-width: 100%;
 
   height: auto;
+}
+.ilustration3_box {
+  display: flex;
+  flex: 1;
+
+  justify-content: flex-end;
 }
