@@ -201,6 +201,7 @@ a {
 .subheading {
   display: inline-flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
   p {
     margin-top: 0;
